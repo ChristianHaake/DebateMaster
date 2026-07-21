@@ -6,27 +6,21 @@ Live application: [https://debatemaster.haak3.de](https://debatemaster.haak3.de)
 
 ## Purpose
 
-Describe:
-
-- the educational problem this app solves;
-- its intended users;
-- the shortest successful workflow;
-- important limitations or responsible-use considerations.
+- **Educational problem**: Fair and structured debates require exact time management to ensure equal participation.
+- **Intended users**: Schülerinnen und Schüler, Lehrkräfte, Debattiergruppen.
+- **Shortest successful workflow**: Add participants, click on a participant's card to start their timer, click again to pause, click "Debatte stoppen" to end, and view the final speaking times chart.
+- **Limitations**: All timers and debate states are currently stored in memory and will be lost on page reload unless exported.
 
 ## Privacy and storage
 
 The core workflow runs in the browser without an account.
 
-Document precisely:
+- **Local Storage**: Debate data is stored locally in the browser's `localStorage` to prevent accidental data loss during a session. No data is sent to any servers.
+- **Uploads/Network**: No files leave the device. Network requests only occur when initially loading the application from Cloudflare Pages.
+- **Data Deletion**: You can delete all saved data at any time by clicking "Debatte zurücksetzen" or by clearing your browser data.
+- **Backup**: Users can create a durable backup by clicking "Als JSON exportieren".
 
-- which data is stored in `localStorage` or IndexedDB;
-- whether uploaded files leave the device;
-- which network requests occur in production;
-- how users delete local data;
-- how users create a durable project backup.
-
-Do not claim that no data is transmitted: the hosting provider necessarily
-processes technical connection data.
+Do not claim that no data is transmitted: the hosting provider necessarily processes technical connection data.
 
 ## Development
 
