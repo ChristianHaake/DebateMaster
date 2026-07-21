@@ -1,0 +1,90 @@
+.debate-controller {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.debate-controller h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.speaker-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.speaker-card {
+  padding: 1rem;
+  border: 2px solid var(--border);
+  border-radius: var(--radius-sm);
+  background-color: var(--surface-subtle);
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.speaker-card:hover {
+  border-color: var(--primary-soft);
+}
+
+.speaker-card--active {
+  border-color: var(--primary);
+  background-color: var(--primary-soft);
+}
+
+.speaker-card--paused {
+  border-color: var(--warning);
+  background-color: var(--warning-soft);
+}
+
+.speaker-card__name {
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.speaker-card__time {
+  font-family: monospace;
+  font-size: 1.25rem;
+  color: var(--text-muted);
+}
+
+.speaker-card--active .speaker-card__time {
+  color: var(--primary);
+}
+
+.speaker-card--paused .speaker-card__time {
+  color: var(--warning);
+}
+
+.controller-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn-secondary {
+  background-color: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.15s;
+}
+
+.btn-secondary:hover {
+  background-color: var(--surface-subtle);
+}
