@@ -17,7 +17,7 @@ export function SupportPage() {
   return (
     <main className="support-page">
       <h1>{title}</h1>
-      <p>Moderierst du Debatten mit DebateMaster? Ein freiwilliger Kaffee hilft mir, die Zeitsteuerung und die Auswertung der Redeanteile weiterzuentwickeln und zu testen.</p>
+      <p>Moderierst du Debatten mit DebateMaster? Ein freiwilliger Kaffee hilft mir, die Zeitsteuerung und die Auswertung der Redeanteile weiterzuentwickeln und zu testen. Alle Funktionen der App bleiben für alle kostenlos.</p>
       <a
         className="support-link"
         href="https://buymeacoffee.com/Haake"
