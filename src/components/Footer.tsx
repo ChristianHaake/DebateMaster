@@ -1,4 +1,5 @@
 import React from 'react';
+import { Coffee } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
@@ -7,6 +8,7 @@ export const Footer: React.FC = () => {
       <a href="/ueber.html">Über</a>
       <a href="/datenschutz.html">Datenschutz</a>
       <a href="/impressum.html">Impressum</a>
+      <a href="/unterstuetzung" className="support-link"><Coffee size={18} aria-hidden="true" />Unterstützen</a>
       <a
         className="github-link"
         href="https://github.com/ChristianHaake/DebateMaster"
